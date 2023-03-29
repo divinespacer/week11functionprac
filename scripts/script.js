@@ -33,6 +33,7 @@
 //   mePara.textContent = cArea;
 //   //   alert(`The area of a circle with radis ${input} is ${cArea.toFixed(2)}`);
 // }
+
 function populateList(shoppingList) {
   // 1. select and store a ref to the ul -> querySelector
   const shopList = document.querySelector(".shopping");
@@ -49,3 +50,10 @@ function populateList(shoppingList) {
 }
 let myList = ["bread", "cheese", "green pepper"];
 populateList(myList);
+
+function square() {
+  const shopList = document.querySelector(".shopping");
+  shopList.classList.replace("circleList", "squareList");
+}
+
+square();
