@@ -57,3 +57,20 @@ function square() {
 }
 
 square();
+
+function img() {
+  const shopCart = document.querySelector("#shoppingCart");
+  //   shopCart.setAttribute(
+  //     "src",
+  //     "https://cdn-icons-png.flaticon.com/512/263/263142.png"
+  //   );
+  //   shopCart.setAttribute("alt", "shopping cart");
+  //   shopCart.setAttribute("width", "50");
+  //   shopCart.setAttribute("height", "50");
+  shopCart.src = "https://cdn-icons-png.flaticon.com/512/263/263142.png";
+  shopCart.alt = "shopping cart";
+  shopCart.width = "50";
+  shopCart.height = "50";
+}
+
+img();
