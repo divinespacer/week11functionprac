@@ -72,5 +72,22 @@ function img() {
   shopCart.width = "50";
   shopCart.height = "50";
 }
-
 img();
+
+function green() {
+  //1. find all li -> querySelectorAll
+  const listitems = document.querySelectorAll(".shopping li");
+  //2. loop through all li
+  for (let item of listitems) {
+    //3. get the text content
+    const words = item.textContent;
+    //4. check in the textcontent contains word green using .include
+    if (words.includes("green")) {
+      //5. if it does, change that li to green text color
+      //item.style.backgroundColor = "green";
+      item.classList.add("green");
+    }
+  }
+}
+
+green();
